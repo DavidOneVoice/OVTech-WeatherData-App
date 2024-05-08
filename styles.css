@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(video.mp4);
+    overflow: hidden; /* Hide overflowing content */
+}
+
+#homevideo {
+    position: absolute;
+    width: 100%;
+    object-fit: cover; 
+    z-index: -1; /* Ensure video stays behind other content */
+}
+
+.container {
+    position: relative; /* Set position to relative */
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px;
+    margin: 3em auto; /* Center the container vertically and horizontally */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('bg.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image within the container */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(68, 68, 255);
+    font-size: 2.2em;
+    background-color: white;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(68, 68, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: rgb(68, 68, 255);
+    color: white;
+}
+
+#weatherInfo {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.weather-description {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather-details {
+    text-align: center;
+    font-size: 16px;
+}
+
+.weather-details p {
+    margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the width for smaller screens */
+        margin: 2em auto; /* Adjust the margin for smaller screens */
+    }
+}
